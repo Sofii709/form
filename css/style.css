@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    font-family: "Roboto";
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 970px;
@@ -25,6 +29,30 @@ body {
 .center {
     display: flex;
     justify-content: center;
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid #3e6aff;
+}
+
+select {
+    border: 1px solid #cccccc;
+    padding: 6px;
+}
+
+textarea {
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 104px;
+    max-height: 300px;
+    padding: 6px;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
 }
 
 .items-center {
@@ -58,37 +86,36 @@ body {
 }
 
 input {
+    box-sizing: border-box;
     width: 100%;
-    padding: 13px;
+    padding: 8px;
     border: 1px solid #cccccc;
-    border-radius: 3px;
 }
 
-.container button {
-    border: solid 0px #fff;
-    padding: 14px 50px;
-    border-radius: 3px;
-    background-color: #12d661;
-    font-size: 14px;
-    color: #fff;
-    font-weight: bold;
-    font-family: "Roboto";
-    text-align: center;
-}
-
-.container div {
-    min-width: 330px;
+input:focus {
+    outline: none;
+    border: 1px solid #3e6aff;
 }
 
 .container::placeholder {
     font-size: 14px;
-    color: #cccccc;
-    font-weight: 400;
+    color: #b3b3b3;
+    font-weight: bold;
     font-family: "Roboto";
 }
 
-.form_one select {
-    padding: 16px;
-    border: 1px solid #cccccc;
+button {
+    padding: 17px 109px 13px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Roboto";
+    background-color: #12d661;
     border-radius: 3px;
+    border: none;
+    transition: all 1s ease;
+}
+
+button:hover {
+    background-color: #07be51;
 }
