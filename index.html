@@ -34,7 +34,7 @@
     <main>
         <section class="formtwo form wrapper">
             <h2>02. елементи</h2>
-            <div class="flex-between">
+            <div class="flex-between items-center">
                 <div class="checkboxes flex-between">
                     <div>
                         <label for=""><input type="radio" name="check" id="">Нова Пошта</label>
@@ -60,6 +60,62 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="wrapper">
+            <hr>
+        </div>
+        <section class="thirdform wrapper">
+            <h2>03. стилізовані чекбокси </h2>
+            <div class="flex items-center">
+                <div class="gender">
+                    <p><label class="man items-center" for=""><input type="radio" name="gender" id="man">Чоловік</label></p>
+                    <p><label class="woman items-center" for=""><input type="radio" name="gender" id="woman">Жінка</label></p>
+                </div>
+                <div class="style">
+                    <p><label class="items-center"><input type="checkbox" name=""><span></span></label>Отримувати новини</p>
+                    <p><label class="items-center"><input type="checkbox" name=""><span></span></label>Купити додому ковбаси</p>
+                    <p><label class="items-center"><input type="checkbox" name=""><span></span></label>Включити світло</p>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section class="wrapper fourthform">
+            <h2>04. форма таблицею</h2>
+            <p>Заповніть усі необхідні поля</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>ФІО:</td>
+                        <td><label for=""><input type="text" name="" id="" placeholder="Введіть ім’я"></label></td>
+                    </tr>
+                    <tr>
+                        <td>Пароль:</td>
+                        <td><label for=""><input type="password" name="" id="" placeholder="Введіть не менше 6 символів"></label></td>
+                    </tr>
+                    <tr>
+                        <td>Місто:</td>
+                        <td><select name="city">
+                        <option value="" selected>Хмельницький</option>
+                        <option value="">Львів</option>
+                        <option value="">Київ</option>
+                        <option value="">Луцьк</option>
+                    </select></td>
+                    </tr>
+                    <tr>
+                        <td>Стать:</td>
+                        <td class="column"><label><input type="radio" name="gend">Чоловік</label>
+                            <label><input type="radio" name="gend">Жінка</label></td>
+                    </tr>
+                    <tr>
+                        <td>Фото:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Коментарій:</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer></footer>

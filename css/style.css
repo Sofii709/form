@@ -13,6 +13,11 @@ body {
     padding: 0 15px;
 }
 
+.flex {
+    display: flex;
+    gap: 300px;
+}
+
 html {
     font-size: 0.8px;
 }
@@ -67,6 +72,14 @@ textarea {
     align-items: center;
 }
 
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
 .form h1 {
     font-size: 30px;
     color: #1f222c;
@@ -77,11 +90,6 @@ textarea {
 }
 
 .form h2 {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #b3b3b3;
-    font-weight: bold;
-    font-family: "Roboto";
     padding-top: 69rem;
     padding-bottom: 28px;
 }
@@ -192,6 +200,117 @@ button:hover {
 }
 
 .checkboxestwo input {
+    appearance: none;
+    outline: none;
     border-radius: 3px;
-    border: 1px solid #ccc;
+    border: 1px solid #bfbfbf;
+}
+
+hr {
+    margin: 50px 0 50px 0;
+    background-color: #b3b3b3;
+}
+
+.thirdform h2 {
+    padding-bottom: 35px;
+}
+
+.gender input {
+    appearance: none;
+    outline: none;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 1s ease;
+}
+
+.gender {
+    font-size: 16px;
+    color: #1f222c;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.man input {
+    margin-bottom: 17px;
+    filter: grayscale(1);
+    background: url(../img/hovman.svg) center/cover no-repeat;
+}
+
+.woman input {
+    filter: grayscale(1);
+    background: url(../img/hovwoman.svg) center/cover no-repeat;
+}
+
+.man input:checked,
+.woman input:checked {
+    filter: grayscale(0);
+}
+
+.style {
+    font-size: 14px;
+    color: #1f222c;
+    font-family: "Roboto";
+}
+
+.style p {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.style label {
+    margin-right: 10px;
+    gap: 10px;
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+}
+
+.style input {
+    border: none;
+    appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 45px;
+    height: 25px;
+    border-radius: 13px;
+    background-color: #cfcfd1;
+    transition: all 1s ease;
+}
+
+.style span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 1s ease;
+}
+
+.style input:checked {
+    background-color: #3e6aff;
+}
+
+.style input:checked+span {
+    left: calc(100% - 23px);
+}
+
+.fourthform p {
+    font-size: 18px;
+    padding: 34px 0 26px;
+    font-weight: bold;
+}
+
+.fourthform table {
+    font-size: 14px;
+    color: #1f222c;
+    width: 500px;
 }
