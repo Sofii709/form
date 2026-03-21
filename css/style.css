@@ -21,6 +21,11 @@ body {
     font-family: "Arial";
 }
 
+.column {
+    display: flex;
+    flex-direction: row;
+}
+
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -37,6 +42,7 @@ select:focus {
 }
 
 select {
+    border-radius: 3px;
     border: 1px solid #cccccc;
     padding: 6px;
 }
@@ -44,10 +50,11 @@ select {
 textarea {
     box-sizing: border-box;
     border: 1px solid #cccccc;
-    max-width: 100%;
+    border-radius: 3px;
+    max-width: 142px;
     min-width: 100%;
     min-height: 104px;
-    max-height: 300px;
+    max-height: 200px;
     padding: 6px;
     font-size: 14px;
     color: #b3b3b3;
@@ -86,6 +93,7 @@ textarea {
 }
 
 input {
+    border-radius: 3px;
     box-sizing: border-box;
     width: 100%;
     padding: 8px;
@@ -118,4 +126,72 @@ button {
 
 button:hover {
     background-color: #07be51;
+}
+
+.formtwo {
+    padding-top: 14px;
+}
+
+.formtwo label {
+    display: flex;
+    gap: 9px;
+    font-size: 14px;
+    color: #1f222c;
+    font-family: "Roboto";
+    padding-bottom: 15px;
+}
+
+.formtwo input {
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+}
+
+.formtwo .disabled {
+    color: #b3b3b3;
+}
+
+.checkbox {
+    padding-left: 60px;
+}
+
+.formtwo h2 {
+    padding-bottom: 45px;
+}
+
+.checkboxestwo p {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-family: "Roboto";
+    padding-right: 40px;
+}
+
+.date input {
+    width: 148px;
+    height: 42px;
+}
+
+.checkboxestwo .date {
+    padding: 10px;
+}
+
+.checkboxestwo {
+    padding: 24px 20px 20px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.checkboxestwo label {
+    padding: 0;
+    padding-left: 25px;
+}
+
+.checkboxestwo .pad {
+    padding: 0;
+}
+
+.checkboxestwo input {
+    border-radius: 3px;
+    border: 1px solid #ccc;
 }
