@@ -90,8 +90,8 @@ h2 {
 }
 
 .form h2 {
-    padding-top: 69rem;
     padding-bottom: 28px;
+    padding-top: 70px;
 }
 
 .form_one {
@@ -104,7 +104,7 @@ input {
     border-radius: 3px;
     box-sizing: border-box;
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #cccccc;
 }
 
@@ -138,6 +138,56 @@ button:hover {
 
 .formtwo {
     padding-top: 14px;
+}
+
+.popup {
+    position: relative;
+    padding: 14px 25px 21px;
+    width: 310px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+
+.cancel {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: 12px;
+}
+
+.popup .cancel {
+    color: #949494;
+}
+
+.popup .cancel:hover {
+    text-decoration: none;
+}
+
+.popup p {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    padding: 13px 0 7px;
+}
+
+.popup a {
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    padding: 13px 0;
+    color: #3e6aff;
+}
+
+.popup a:hover {
+    text-decoration: underline;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 14px;
 }
 
 .formtwo label {
@@ -313,4 +363,127 @@ hr {
     font-size: 14px;
     color: #1f222c;
     width: 500px;
+}
+
+.file input {
+    display: none;
+}
+
+.fourthform input+label {
+    display: inline-block;
+    max-width: 170px;
+    padding: 12px 37px;
+    border-radius: 3px;
+    background-color: #3e6aff;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.file input+label:hover {
+    background-color: blue;
+}
+
+.fourthform input,
+td {
+    box-sizing: border-box;
+    max-width: 340px;
+}
+
+.fourthform select {
+    width: 340px;
+}
+
+.fourthform textarea {
+    max-width: 340px;
+    min-width: 340px;
+}
+
+.fourthform button {
+    width: 340px;
+}
+
+.fourthform td {
+    padding-bottom: 10px;
+    gap: 15px;
+}
+
+.comment {
+    padding-right: 80px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.fifth p {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: bold;
+    padding: 33px 0 20px;
+}
+
+.fifth td {
+    max-width: 220px;
+    padding-right: 9px;
+}
+
+.fifth table {
+    margin-bottom: 144px;
+}
+
+.fifth table p {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    padding: 0 0 8px;
+}
+
+.fifth table hr {
+    margin: 25px 0;
+    background-color: #e9e9e9;
+    border: 0;
+    height: 1px;
+}
+
+.fifth select {
+    width: 100%;
+    padding: 9px;
+}
+
+.pad td {
+    padding-bottom: 16px;
+}
+
+.fifth a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: bold;
+    padding: 13px 25px;
+    border: 1px solid #85868d;
+    border-radius: 3px;
+    transition: all 1s ease;
+}
+
+.fifth a:hover {
+    background-color: #85868d;
+    color: #fff;
+}
+
+.fifth button {
+    margin-left: 15px;
+    padding: 15px 26px;
+}
+
+.agree {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    color: #1f222c;
+    gap: 10px;
+}
+
+.agree input {
+    width: 16px;
+    height: 16px;
 }
