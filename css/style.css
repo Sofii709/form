@@ -9,7 +9,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 970px;
+    width: 74%;
     padding: 0 15px;
 }
 
@@ -72,13 +72,14 @@ textarea {
     align-items: center;
 }
 
-label>select {
+.label {
     position: relative;
     border: 1px solid #ccc;
     border-radius: 3px;
+    padding: 10px 0;
 }
 
-label>select:before {
+.label:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -86,7 +87,7 @@ label>select:before {
     border: 5px solid transparent;
     border-top-color: #000;
     transform: translateY(-25%);
-    z-index: 1;
+    z-index: -1;
 }
 
 select {
@@ -124,13 +125,21 @@ h2 {
 
 .fixed_form {
     position: fixed;
-    right: 15%;
+    right: 13%;
 }
 
 .form_one {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.form_one .label {
+    padding: 0;
+}
+
+.form_one button {
+    margin-top: 5px;
 }
 
 input {
@@ -167,6 +176,7 @@ button {
 
 button:hover {
     background-color: #07be51;
+    cursor: pointer;
 }
 
 .formtwo {
@@ -283,6 +293,7 @@ button:hover {
 }
 
 .checked input {
+    padding: 0;
     appearance: none;
     outline: none;
     border-radius: 3px;
@@ -310,7 +321,7 @@ hr {
     border: none;
     border-radius: 50%;
     margin-right: 15px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .gender {
@@ -366,7 +377,7 @@ hr {
     height: 25px;
     border-radius: 13px;
     background-color: #cfcfd1;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 }
 
 .style span {
@@ -484,6 +495,10 @@ td {
 
 .fifth select {
     width: 100%;
+}
+
+.fifth .pad label {
+    padding: 21px 0 15px;
 }
 
 .pad td {

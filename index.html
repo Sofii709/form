@@ -17,7 +17,7 @@
                     <h2>01. проста форма</h2>
                     <label for=""><input type="text" placeholder="Введіть ім’я"></label> <br>
                     <label class="email" for=""><input type="text" placeholder="Email"></label> <br>
-                    <label for="">
+                    <label class="label">
                         <select name="city">
                             <option value="" selected disabled>Ваше місто</option>
                             <option value="">Хмельницький</option>
@@ -26,10 +26,10 @@
                             <option value="">Луцьк</option>
                         </select>
                     </label> <br>
-                    <textarea name="" placeholder="Email"></textarea> <br>
+                    <textarea name="" placeholder="Email"></textarea>
                     <button type="submit">Зареєструватися</button>
                 </div>
-                <div class="fixed_form checked">
+                <div class="fixed_form">
                     <h2>06. фіксована форма</h2>
                     <div class="popup">
                         <p>Логін</p>
@@ -37,7 +37,7 @@
                         <p>Пароль</p>
                         <label for=""><input type="text"></label>
                         <a class="forgot" href="#">Забули пароль?</a>
-                        <label class="agree items-center" for=""><input type="checkbox" name="agree" id="">Запам’ятати пароль</label>
+                        <label class="agree items-center  checked" for=""><input type="checkbox" name="agree" id="">Запам’ятати пароль</label>
                         <button type="submit">Увійти</button>
                         <a class="cancel" href="#">X</a>
                     </div>
@@ -116,7 +116,7 @@
                     </tr>
                     <tr>
                         <td>Місто:</td>
-                        <td><label for="">
+                        <td><label class="label">
                             <select name="city">
                                     <option value="" selected>Хмельницький</option>
                                     <option value="">Львів</option>
@@ -180,7 +180,7 @@
                     <tr class="pad">
                         <td>
                             <p>Країна</p>
-                            <label for="">
+                            <label class="label">
                                 <select name="country">
                                     <option value="" selected>Індонезія</option>
                                     <option value="">Львів</option>
