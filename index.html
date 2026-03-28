@@ -17,17 +17,19 @@
                     <h2>01. проста форма</h2>
                     <label for=""><input type="text" placeholder="Введіть ім’я"></label> <br>
                     <label class="email" for=""><input type="text" placeholder="Email"></label> <br>
-                    <select name="city">
-                        <option value="" selected disabled>Ваше місто</option>
-                        <option value="">Хмельницький</option>
-                        <option value="">Львів</option>
-                        <option value="">Київ</option>
-                        <option value="">Луцьк</option>
-                    </select> <br>
+                    <label for="">
+                        <select name="city">
+                            <option value="" selected disabled>Ваше місто</option>
+                            <option value="">Хмельницький</option>
+                            <option value="">Львів</option>
+                            <option value="">Київ</option>
+                            <option value="">Луцьк</option>
+                        </select>
+                    </label> <br>
                     <textarea name="" placeholder="Email"></textarea> <br>
                     <button type="submit">Зареєструватися</button>
                 </div>
-                <div class="fixed_form">
+                <div class="fixed_form checked">
                     <h2>06. фіксована форма</h2>
                     <div class="popup">
                         <p>Логін</p>
@@ -54,19 +56,19 @@
                         <label for=""><input type="radio" name="check" id="">Кур’єр</label>
                         <label for="" class="disabled"><input type="radio" name="check" id="" disabled>Самовивіз</label>
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" name="">Прочитав умови договору</label>
-                        <label><input type="checkbox" name="">Згідний з ПДВ 9%</label>
-                        <label class="disabled"><input type="checkbox" name="" disabled>Отримувати новини на ел.
+                    <div class="checkbox checked">
+                        <label class="items-center"><input type="checkbox" name="">Прочитав умови договору</label>
+                        <label class="items-center"><input type="checkbox" name="">Згідний з ПДВ 9%</label>
+                        <label class="disabled items-center"><input type="checkbox" name="" disabled>Отримувати новини на ел.
                             пошту</label>
                     </div>
                 </div>
                 <div class="checkboxestwo">
-                    <div class="column items-center">
+                    <div class="column items-center checked">
                         <p>Статус</p>
-                        <label class="pad"><input type="checkbox" name="">Новинки</label>
-                        <label><input type="checkbox" name="">Акційні товари</label>
-                        <label><input type="checkbox" name="">Розпродаж</label>
+                        <label class="pad items-center"><input type="checkbox" name="">Новинки</label>
+                        <label class="items-center"><input type="checkbox" name="">Акційні товари</label>
+                        <label class="items-center"><input type="checkbox" name="">Розпродаж</label>
                     </div>
                     <div class="column items-center">
                         <p>Дата</p>
@@ -114,12 +116,14 @@
                     </tr>
                     <tr>
                         <td>Місто:</td>
-                        <td><select name="city">
-                                <option value="" selected>Хмельницький</option>
-                                <option value="">Львів</option>
-                                <option value="">Київ</option>
-                                <option value="">Луцьк</option>
-                            </select></td>
+                        <td><label for="">
+                            <select name="city">
+                                    <option value="" selected>Хмельницький</option>
+                                    <option value="">Львів</option>
+                                    <option value="">Київ</option>
+                                    <option value="">Луцьк</option>
+                                </select>
+                        </label></td>
                     </tr>
                     <tr>
                         <td>Стать:</td>
@@ -176,12 +180,14 @@
                     <tr class="pad">
                         <td>
                             <p>Країна</p>
-                            <select name="country">
-                                <option value="" selected>Індонезія</option>
-                                <option value="">Львів</option>
-                                <option value="">Київ</option>
-                                <option value="">Луцьк</option>
-                            </select>
+                            <label for="">
+                                <select name="country">
+                                    <option value="" selected>Індонезія</option>
+                                    <option value="">Львів</option>
+                                    <option value="">Київ</option>
+                                    <option value="">Луцьк</option>
+                                </select>
+                            </label>
                         </td>
                         <td colspan="2">
                             <p>Адреса</p>
@@ -204,7 +210,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><label class="agree items-center" for=""><input type="checkbox" name="agree" id="">Я погоджуюсь з правилами оплати та доставки товару</label></td>
+                        <td colspan="2"><label class="checked agree items-center" for=""><input type="checkbox" name="agree" id="">Я погоджуюсь з правилами оплати та доставки товару</label></td>
                     </tr>
                     <tr>
                         <td colspan="3"><hr></td>
