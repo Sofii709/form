@@ -49,7 +49,7 @@ select:focus {
 select {
     border-radius: 3px;
     border: 1px solid #cccccc;
-    padding: 6px;
+    padding: 10px;
 }
 
 textarea {
@@ -64,7 +64,7 @@ textarea {
     font-size: 14px;
     color: #b3b3b3;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "arial";
 }
 
 .items-center {
@@ -484,7 +484,6 @@ td {
 
 .fifth select {
     width: 100%;
-    padding: 9px;
 }
 
 .pad td {
