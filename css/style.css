@@ -23,12 +23,22 @@ html {
 }
 
 body {
-    font-family: "Arial";
+    font-family: "Roboto";
+}
+
+.not_checked input:focus {
+    box-shadow: none;
 }
 
 .column {
     display: flex;
     flex-direction: row;
+}
+
+.column label {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
 }
 
 .flex-between {
@@ -97,7 +107,7 @@ select {
     background-color: transparent;
 }
 
-textarea:focus{
+textarea:focus {
     border: 1px solid #3e6aff;
 }
 
@@ -153,6 +163,7 @@ input {
 input:focus {
     outline: none;
     border: 1px solid #3e6aff;
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
 }
 
 .container::placeholder {
@@ -177,6 +188,7 @@ button {
 button:hover {
     background-color: #07be51;
     cursor: pointer;
+    box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
 }
 
 .formtwo {
@@ -261,10 +273,10 @@ button:hover {
 }
 
 .checkboxestwo p {
+    width: 78px;
     font-size: 14px;
     color: #b3b3b3;
     font-family: "Roboto";
-    padding-right: 40px;
 }
 
 .date input {
@@ -273,11 +285,11 @@ button:hover {
 }
 
 .checkboxestwo .date {
-    padding: 10px;
+    padding: 10px 10px 10px 0;
 }
 
 .checkboxestwo {
-    padding: 24px 20px 20px;
+    padding: 24px 20px 15px;
     border-radius: 3px;
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
@@ -301,7 +313,7 @@ button:hover {
 }
 
 .checked input:checked {
-    background:url(../img/checked.png) center no-repeat;
+    background: url(../img/checked.png) center no-repeat;
 }
 
 hr {
@@ -431,6 +443,7 @@ hr {
 
 .file input+label:hover {
     background-color: blue;
+    box-shadow: 0px 2px 2.5px rgba(15, 40, 126, 0.35);
 }
 
 .fourthform input,
@@ -454,7 +467,7 @@ td {
 
 .fourthform td {
     padding-bottom: 10px;
-    gap: 15px;
+    gap: 24px;
 }
 
 .comment {
@@ -498,7 +511,9 @@ td {
 }
 
 .fifth .pad label {
-    padding: 21px 0 15px;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
 }
 
 .pad td {

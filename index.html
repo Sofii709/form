@@ -37,7 +37,8 @@
                         <p>Пароль</p>
                         <label for=""><input type="text"></label>
                         <a class="forgot" href="#">Забули пароль?</a>
-                        <label class="agree items-center  checked" for=""><input type="checkbox" name="agree" id="">Запам’ятати пароль</label>
+                        <label class="agree items-center checked not_checked" for=""><input type="checkbox" name="agree"
+                                id="">Запам’ятати пароль</label>
                         <button type="submit">Увійти</button>
                         <a class="cancel" href="#">X</a>
                     </div>
@@ -49,7 +50,7 @@
     <main>
         <section class="formtwo form wrapper">
             <h2>02. елементи</h2>
-            <div class="flex-between items-center">
+            <div class="flex-between items-center not_checked">
                 <div class="checkboxes flex-between">
                     <div>
                         <label for=""><input type="radio" name="check" id="">Нова Пошта</label>
@@ -59,7 +60,8 @@
                     <div class="checkbox checked">
                         <label class="items-center"><input type="checkbox" name="">Прочитав умови договору</label>
                         <label class="items-center"><input type="checkbox" name="">Згідний з ПДВ 9%</label>
-                        <label class="disabled items-center"><input type="checkbox" name="" disabled>Отримувати новини на ел.
+                        <label class="disabled items-center"><input type="checkbox" name="" disabled>Отримувати новини
+                            на ел.
                             пошту</label>
                     </div>
                 </div>
@@ -117,18 +119,18 @@
                     <tr>
                         <td>Місто:</td>
                         <td><label class="label">
-                            <select name="city">
+                                <select name="city">
                                     <option value="" selected>Хмельницький</option>
                                     <option value="">Львів</option>
                                     <option value="">Київ</option>
                                     <option value="">Луцьк</option>
                                 </select>
-                        </label></td>
+                            </label></td>
                     </tr>
                     <tr>
                         <td>Стать:</td>
-                        <td class="column"><label><input type="radio" name="gend"></label>Чоловік
-                            <label><input type="radio" name="gend"></label>Жінка</td>
+                        <td class="column not_checked items-center"><label><input type="radio" name="gend">Чоловік</label>
+                            <label><input type="radio" name="gend">Жінка</label></td>
                     </tr>
                     <tr>
                         <td>Фото:</td>
@@ -210,10 +212,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><label class="checked agree items-center" for=""><input type="checkbox" name="agree" id="">Я погоджуюсь з правилами оплати та доставки товару</label></td>
+                        <td colspan="2"><label class="checked agree items-center not_checked" for=""><input type="checkbox"
+                                    name="agree" id="">Я погоджуюсь з правилами оплати та доставки товару</label></td>
                     </tr>
                     <tr>
-                        <td colspan="3"><hr></td>
+                        <td colspan="3">
+                            <hr>
+                        </td>
                     </tr>
                     <tr>
                         <td><a href="#">Повернутися назад</a></td>
