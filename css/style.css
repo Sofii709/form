@@ -261,6 +261,10 @@ button:hover {
     padding-right: 10px;
 }
 
+.formtwo .disabled input {
+    background-color: #f7f7f7;
+}
+
 .formtwo .disabled {
     color: #b3b3b3;
 }
@@ -314,7 +318,7 @@ button:hover {
 }
 
 .checked input:checked {
-    background: url(../img/checked.png) center no-repeat;
+    background: url(../img/checked.svg) center no-repeat;
 }
 
 hr {
@@ -423,7 +427,11 @@ hr {
 .fourthform table {
     font-size: 14px;
     color: #1f222c;
-    width: 500px;
+    width: 100%;
+}
+
+.tables {
+    max-width: 500px;
 }
 
 .file input {
@@ -490,7 +498,12 @@ td {
 }
 
 .fifth table {
+    width: 100%;
     margin-bottom: 144px;
+}
+
+.table {
+    max-width: 681px;
 }
 
 .fifth table p {
@@ -540,6 +553,21 @@ td {
 .fifth button {
     margin-left: 15px;
     padding: 15px 26px;
+}
+
+.line {
+    position: relative;
+}
+
+.line:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 19px;
+    background-color: #ccc;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
 }
 
 .agree {
