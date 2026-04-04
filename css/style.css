@@ -134,6 +134,7 @@ h2 {
 }
 
 .fixed_form {
+    z-index: 3;
     position: fixed;
     right: 13%;
 }
