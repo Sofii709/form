@@ -26,8 +26,36 @@ body {
     font-family: "Roboto";
 }
 
-label, select {
+label,
+select {
     cursor: pointer;
+}
+
+.radio input {
+    border-color: #ccc;
+}
+
+.radio input:checked {
+    position: relative;
+    padding: 0;
+    outline:none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+.radio input:checked::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #3e6aff;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
 }
 
 .not_checked input:focus {
@@ -109,6 +137,10 @@ select {
     width: 100%;
     border: none;
     background-color: transparent;
+}
+
+select label:focus {
+    border: none;
 }
 
 textarea:focus {
@@ -198,6 +230,10 @@ button:hover {
 
 .formtwo {
     padding-top: 14px;
+}
+
+.formtwo h2 {
+    padding-top: 0;
 }
 
 .popup {
@@ -353,9 +389,12 @@ hr {
 }
 
 .man input {
-    margin-bottom: 17px;
     filter: grayscale(1);
     background: url(../img/hovman.svg) center/cover no-repeat;
+}
+
+.man {
+    margin-bottom: 17px;
 }
 
 .woman input {
@@ -368,15 +407,16 @@ hr {
     filter: grayscale(0);
 }
 
-.man span, .woman span {
+.man span,
+.woman span {
     transition: all 1s ease;
 }
 
-.man input:checked + span {
+.man input:checked+span {
     color: #3e6aff;
 }
 
-.woman input:checked + span {
+.woman input:checked+span {
     color: #3e6aff;
 }
 
@@ -529,6 +569,12 @@ td {
     padding: 0 0 8px;
 }
 
+hr {
+    background-color: #e9e9e9;
+    border: 0;
+    height: 1px;
+}
+
 .fifth table hr {
     margin: 25px 0;
     background-color: #e9e9e9;
@@ -544,6 +590,10 @@ td {
     display: inline-block;
     width: 100%;
     padding: 0;
+}
+
+.pad tr label:focus {
+    border: none;
 }
 
 .pad td {
@@ -567,6 +617,7 @@ td {
 }
 
 .fifth button {
+    width: 195px;
     margin-left: 15px;
     padding: 15px 26px;
 }
@@ -582,7 +633,7 @@ td {
     height: 19px;
     background-color: #ccc;
     top: 50%;
-    right: 30px;
+    right: 35px;
     transform: translateY(-50%);
 }
 
