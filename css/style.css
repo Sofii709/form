@@ -116,9 +116,18 @@ textarea {
 
 .label {
     position: relative;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 3px;
     padding: 10px 0;
+}
+
+.label select {
+    border: 1px solid #ccc;
+}
+
+.label select:focus {
+    border: 1px solid #3e6aff;
+     box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
 }
 
 .label:before {
@@ -176,6 +185,7 @@ h2 {
 }
 
 .form_one {
+    width: 330px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -211,7 +221,8 @@ input:focus {
 }
 
 button {
-    padding: 17px 109px 13px;
+    width: 100%;
+    padding: 17px 0px 13px;
     font-size: 14px;
     color: #ffffff;
     font-weight: bold;
