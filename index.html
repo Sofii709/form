@@ -32,20 +32,24 @@
                     <textarea name="" placeholder="Email"></textarea>
                     <button type="submit">Зареєструватися</button>
                 </div>
-                <div class="fixed_form">
+                <div class="fixed-form" id="fixed-form">
                     <h2>06. фіксована форма</h2>
-                    <div class="popup">
+                    <div class="popup" id="popup">
                         <p>Логін</p>
-                        <label for=""><input type="text"></label>
+                        <label for="">
+                            <input type="text">
+                        </label>
                         <p>Пароль</p>
                         <label><input type="text"></label>
-                        <a class="forgot" href="#">Забули пароль?</a>
-                        <label class="agree items-center checked not_checked"><input type="checkbox" name="agree"
-                                id="">Запам’ятати пароль</label>
+                        <a class="forgot" href="">Забули пароль?</a>
+                        <label class="agree items-center checked notchecked">
+                            <input type="checkbox" name="agree" id="">Запам’ятати пароль
+                        </label>
                         <button type="submit">Увійти</button>
-                        <a class="cancel" href="">X</a>
+                        <a class="cancel" id="closeBtn" href="">X</a>
                     </div>
                 </div>
+                <button type="button" id="openpopup">Відкрити попап</button>
             </div>
             <hr>
         </section>
@@ -237,6 +241,7 @@
             </div>
         </section>
     </footer>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

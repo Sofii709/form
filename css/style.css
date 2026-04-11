@@ -13,6 +13,17 @@ body {
     padding: 0 15px;
 }
 
+#openpopup {
+    position: absolute;
+    display: none;
+    right: 30%;
+    padding: 15px 18px;
+    font-size: 14px;
+    top: 220px;
+    width: auto;
+    z-index: 2;
+}
+
 .flex {
     display: flex;
     gap: 300px;
@@ -178,8 +189,11 @@ h2 {
     padding-top: 70px;
 }
 
-.fixed_form {
+.fixed-form {
     z-index: 3;
+}
+
+.fixed-form {
     position: fixed;
     right: 13%;
 }
