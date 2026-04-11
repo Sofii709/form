@@ -114,8 +114,8 @@ textarea {
     min-height: 104px;
     max-height: 200px;
     padding: 6px;
-    font-size: 14px;
-    color: #b3b3b3;
+    font-size: 13px;
+    color: #000;
     font-weight: 400;
     font-family: "arial";
 }
